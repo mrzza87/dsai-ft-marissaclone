@@ -102,9 +102,11 @@ def webhook():
     return ('ok', 200)
 
 # ✅ MOVE THIS ABOVE app.run()
-@app.route("/sepia", methods=["GET", "POST"])
+
+@app.route("/sepia", methods=["GET"])
 def sepia():
     return render_template("sepia_hf.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
