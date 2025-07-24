@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sepia Filter Demo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>🎨 Sepia Filter Image Demo</h2>
+    <p>This Gradio app runs on Hugging Face Spaces.</p>
+
+    <!-- ✅ Official Gradio embed -->
+    <script type="module"
+      src="https://gradio.s3-us-west-2.amazonaws.com/5.38.1/gradio.js">
+    </script>
+    <gradio-app src="https://mrzza87-sepia.hf.space"></gradio-app>
+
+    <hr>
+
+    <!-- ✅ Fallback iframe embed -->
+    <iframe
+      src="https://mrzza87-sepia.hf.space"
+      frameborder="0"
+      width="100%"
+      height="500"
+      style="border:1px solid #ccc; border-radius: 8px;"
+    ></iframe>
+
+    <p>
+      If the embed doesn’t load, you can open it directly here:  
+      <a href="https://mrzza87-sepia.hf.space" target="_blank">Open in new tab</a>
+    </p>
+  </div>
+</body>
+</html>
